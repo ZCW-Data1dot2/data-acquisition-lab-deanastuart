@@ -4,13 +4,13 @@ import os
 json_file_count = 0
 url_offset = 1
 
-key = 'NOAA_TOKEN'
-token = os.getenv(key)
+
+token = input('Token:')
 payload = {}
 headers = {
   'Content-Type': 'application/json',
   'token': token,
-  'Authorization': 'Bearer yFrdrTrYPWeQEzGceedICOtfnqUWFFUf'
+  'Authorization': 'Bearer' + token
 }
 
 # data = (response.text.encode('utf8'))
